@@ -1,0 +1,34 @@
+/*****************
+* Footer
+******************/
+
+footer {
+    
+    background: $footer_color;
+
+    .footer_content {
+        @include flex(center, space-between);
+        padding: 10px 32px;
+    
+        ul {
+            @include flex(center);
+            @include list_style;
+            li{
+                a {
+                    @include font_style(11px, $footer_linkcolor, 300, 24px);
+                    @include style_link;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .footer_language {
+        @include flex(center);
+        img {
+            margin-right: 10px;
+        }
+        select {
+            width: 170px;
+        }
+    }
+}
