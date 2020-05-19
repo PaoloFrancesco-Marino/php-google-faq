@@ -6,12 +6,33 @@
     <title>Domande frequenti – Privacy e termini – Google</title>
 
     <!-- font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"> 
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"> 
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="dist/css/main.css">
     <!-- icon web -->
     <link rel="icon" href="//ssl.gstatic.com/policies/favicon.ico" sizes="32x32">
 </head>
 <body>
+
+    <header>
+        <nav class="navbar">
+            <div class="top_navbar">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="google logo">
+                <h2>Privacy e termini</h2>
+            </div>
+            <div class="bottom_navbar">
+                <ul>
+                    <li><a href="#">Introduzione</a></li>
+                    <li><a href="#">Norme sulla privacy</a></li>
+                    <li><a href="#">Termini di servizio</a></li>
+                    <li><a href="#">Tecnologie</a></li>
+                    <li><a href="#">Domande frequenti</a></li>
+                    <li><a href="#">Account Google</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
 <!-- PHP -->
 <?php 
@@ -44,13 +65,13 @@
         ]
     ];
 
-    foreach ($google_faq as $key => $data) {
-        echo $key . '<br>';
+    // foreach ($google_faq as $key => $data) {
+    //     echo $key . '<br>';
 
-        foreach ($data as $answer) {
-            echo $data['text'] . '<br>';
-        }
-    }
+    //     foreach ($data as $answer) {
+    //         echo $data['text'] . '<br>';
+    //     }
+    // }
 
 ?>
 <!-- ./PHP -->

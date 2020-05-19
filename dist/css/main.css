@@ -1,4 +1,8 @@
 /*****************
+* Variables
+******************/
+
+/*****************
 * Commons
 ******************/
 
@@ -10,5 +14,93 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+/**********
+* Mixin
+***********/
+
+/*****************
+* Header
+******************/
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 24px 24px 0 24px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+}
+
+.navbar .top_navbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.navbar .top_navbar h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  color: #5f6368;
+  font-weight: 400;
+  margin-left: 7px;
+}
+
+.navbar .bottom_navbar {
+  padding: 15px 15px 0 0;
+}
+
+.navbar .bottom_navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar .bottom_navbar ul li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #5f6368;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  margin-right: 42px;
+  padding-bottom: 8px;
+}
+
+.navbar .bottom_navbar ul li a:hover::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: #3367d6;
+  transform: translate(-50%);
+}
+
+.navbar .bottom_navbar ul li:nth-child(5) a {
+  font-family: "Open Sans", sans-serif;
+  color: #3367d6;
+}
+
+.navbar .bottom_navbar ul li:nth-child(5) a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: #3367d6;
+  transform: translate(-50%);
+}
+
+.navbar .bottom_navbar ul li:last-child {
+  flex-grow: 1;
+  text-align: right;
 }
 
