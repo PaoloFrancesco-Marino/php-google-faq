@@ -1,0 +1,19 @@
+/*****************
+* Faq
+******************/
+
+.faq_content {
+    padding: 32px;
+
+    h2 {
+        @include font_style(24px, $title_color, 600, 32px);
+        margin-top: 64px;
+    }
+
+    p {
+
+        @include font_style(14px, $paragraph_color, 400, 24px);
+        font-family: $font_roboto;
+        margin: 20px 0 10px;
+    }
+}
