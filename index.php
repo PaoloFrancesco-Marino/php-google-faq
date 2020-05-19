@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"> 
     
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="dist/css/main.css">
+    
     <!-- icon web -->
     <link rel="icon" href="//ssl.gstatic.com/policies/favicon.ico" sizes="32x32">
 </head>
